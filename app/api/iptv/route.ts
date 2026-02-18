@@ -1,4 +1,4 @@
-/**
+export const runtime = 'edge';
  * IPTV Proxy API Route
  * Fetches M3U playlist files to avoid CORS issues
  */
