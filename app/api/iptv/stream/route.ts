@@ -1,4 +1,4 @@
-/**
+export const runtime = 'edge';
  * IPTV Stream Proxy API Route
  * Proxies HLS manifests and media segments to avoid CORS issues.
  * For .m3u8 manifests, rewrites URLs to also route through this proxy.
