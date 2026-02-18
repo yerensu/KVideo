@@ -1,11 +1,12 @@
-export const runtime = 'edge';
+/**
  * IPTV Proxy API Route
  * Fetches M3U playlist files to avoid CORS issues
  */
 
-import { NextRequest, NextResponse } from 'next/server';
+// 唯一且正确的 Edge Runtime 配置（必须放在最顶部，且只保留这一行）
+export const runtime = 'edge';
 
-export const runtime = 'nodejs';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(request: NextRequest) {
   const url = request.nextUrl.searchParams.get('url');
